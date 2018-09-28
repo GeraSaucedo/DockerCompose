@@ -1,0 +1,12 @@
+version: '3' #Docker-compose version
+services:       
+        db:     #Service name
+                image: mysql    #image that will be use in the container
+                container_name: mysql   #name of the container
+                ports:  #ports that will be used for the container
+                        - "3306:3306"
+                env_file: common.env  #Envaironment variables that will be used for the container
+                        
+
+                        
+         

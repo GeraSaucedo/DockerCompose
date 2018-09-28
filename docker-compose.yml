@@ -1,0 +1,16 @@
+#FIRST STEPS WHIT DOCKER COMPOSE
+#BASIC STRUCTURE OF A DOCKER-COMPOSE FILE
+version: '3' #number of docker-compose version, use lastest version
+services: #Services that the container will run
+        web:
+                container_name: WebServerJerry #this label define the container's name
+                ports: #this label is for define the ports will be used 
+                        - "80:80"       
+                image: nginx #name of the image will be used for the container
+                               
+#volumes: #label not mandatory
+#networks: #label not mandatory
+#
+#FOR RUN/STOP THIS DOCKER-COMPOSE FILE JOB:
+# - docker-compose up -d
+# - docker-compose down
