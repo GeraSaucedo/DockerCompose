@@ -1,0 +1,16 @@
+version: '3' #Docker-compose version
+services:       
+        Web:     #Service name
+                container_name: WebServer   #name of the container
+                ports:  #po::s that will be used for the container
+                        - "80:80"
+                env_file: common.env  #Envaironment variables that will be used for the container
+                volumes: #set the volumen will be used 
+                        #- "vol2:/usr/share/nginx/html"
+                        - /home/jerry/DockerFiles/DockerComposeFiles/html:/usr/share/nginx/html
+                image: nginx    #image that will be use in the container
+#volumes:
+# vol2:        
+
+                        
+         

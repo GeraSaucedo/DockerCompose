@@ -1,0 +1,5 @@
+#cuando se crea una red en un docker-compose la red toma el formato: NombreProyecto_NombreRed, para cambiar este NombreProyecto
+se puede hacer al momento de correr el compose de la siguiente manera:
+
+		docker-compose -p [NombreQueQuieras] up -d
+

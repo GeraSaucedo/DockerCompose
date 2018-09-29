@@ -1,0 +1,16 @@
+#significa las condiciones en las que un contenedor debe ser reiniciado
+version: '3'
+services:
+        test:
+                container_name: test
+                image: restart-image
+                build: .
+                restart: always
+
+                        
+#EL VALOR POR DEFECTO ES NO, ES DECIR, QUE NO SE REINICIARA POR DEFECTO
+#existen 3 tipos de restart:
+#       no	        Do not automatically restart the container. (the default)
+#       on-failure	Restart the container if it exits due to an error, which manifests as a non-zero exit code.
+#       unless-stopped	Restart the container unless it is explicitly stopped or Docker itself is stopped or restarted.
+#       always	        Always restart the container if it stops.

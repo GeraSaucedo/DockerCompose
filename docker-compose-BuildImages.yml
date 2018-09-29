@@ -1,0 +1,13 @@
+#HOW TO CREATE DOCKER IMAGES FROM DOCKERFILE
+version: '3'
+services:
+        web:
+                container_name: web2
+                image: web-test
+                build: #Use this label for build an image
+                        context: .  #Path to dockerfile  context: [Path]
+                        dockerfile: Dockerfile1  #Dockerfile name | dockerfile: [DockerfileName]
+      
+#after use build label you ned to use docker-compose build command -> docker-compose build
+
+

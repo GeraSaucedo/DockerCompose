@@ -1,0 +1,20 @@
+version: '3'
+services: 
+        web: 
+                container_name: WebServer1 
+                ports:
+                        - "80:80"
+                image: ubuntu
+                networks:
+                        - JerryNet
+        web2:
+                container_name: WebServer2
+                ports:
+                        - "81:80"
+                image: ubuntu
+                networks:
+                        - JerryNet
+networks: #We need create the network that we will be using
+        JerryNet:
+
+                           
